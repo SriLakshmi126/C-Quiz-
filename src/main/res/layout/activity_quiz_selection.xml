@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Page Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Pick a Week to Begin!!"
+            android:textColor="#D32F2F"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <!-- Week 1 Quiz Button -->
+        <Button
+            android:id="@+id/quiz1"
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:text="Week 1"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/quiz_button_background"
+            android:layout_marginBottom="16dp"/>
+
+
+        <!-- Week 2 Quiz Button -->
+        <Button
+            android:id="@+id/quiz2"
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:text="Week 2"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/quiz_button_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week 3 Quiz Button -->
+        <Button
+            android:id="@+id/quiz3"
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:text="Week 3"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/quiz_button_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week 4 Quiz Button -->
+        <Button
+            android:id="@+id/quiz4"
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:text="Week 4"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/quiz_button_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Week 5 Quiz Button -->
+        <Button
+            android:id="@+id/quiz5"
+            android:layout_width="255dp"
+            android:layout_height="55dp"
+            android:text="Week 5"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/quiz_button_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Go to App (Home) Button -->
+        <Button
+            android:id="@+id/goToAppButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Go Back"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

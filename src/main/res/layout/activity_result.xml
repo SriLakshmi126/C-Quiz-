@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:gravity="center_horizontal">
+
+    <!-- Trophy Image at the Top -->
+
+    <!-- Displays the final quiz score -->
+    <ImageView
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/trophy" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="10dp"
+        android:text="Results : "
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Shows list of correctly answered question numbers -->
+    <TextView
+        android:id="@+id/correctText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Correct Questions: []"
+        android:textColor="#D32F2F"
+        android:textSize="24sp" />
+
+    <!-- Shows list of incorrectly answered question numbers -->
+    <TextView
+        android:id="@+id/incorrectText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="Incorrect Questions: []"
+        android:textColor="#D32F2F"
+        android:textSize="24sp" />
+
+    <!-- Buttons to review quiz or finish -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Opens ReviewActivity to view question-wise feedback -->
+        <Button
+            android:id="@+id/reviewButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Review Quiz"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <!-- Ends the result screen and returns to previous screen -->
+        <Button
+            android:id="@+id/finishButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D32F2F"
+            android:text="Finish"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

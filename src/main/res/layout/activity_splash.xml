@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/getStartedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Let's get started!"
+        android:textColor="#D32F2F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageView
+        android:id="@+id/rocketImage"
+        android:layout_width="1000dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/rocket_image" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rocketImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Pick a week, take the quiz, and track your progress!"
+        android:textAlignment="center"
+        android:textColor="#D32F2F"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>

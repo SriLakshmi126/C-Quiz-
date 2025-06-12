@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <!-- Timer Text (Top Left Corner) -->
+    <TextView
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="03:00"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp" />
+
+    <!-- Quit Button (Top Right Corner) -->
+    <TextView
+        android:id="@+id/quitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textColor="#D32F2F"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Scrollable Area Below Quit Button -->
+    <ScrollView
+        android:id="@+id/scrollArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/quitButton"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Displays Current Question Number -->
+            <TextView
+                android:id="@+id/questionNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="4dp"
+                android:text="Question: 1/30"
+                android:textColor="#D32F2F"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!-- Displays Question Text -->
+            <TextView
+                android:id="@+id/questionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="Question will appear here"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chooseAnswerText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                android:gravity="center"
+                android:text="Choose your answer"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="20sp" />
+
+            <!-- Radio Group for Answer Choices -->
+            <RadioGroup
+                android:id="@+id/choicesGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Choice A -->
+                <RadioButton
+                    android:id="@+id/choice1"
+                    style="@style/QuizRadioButton" />
+
+                <!-- Choice B -->
+                <RadioButton
+                    android:id="@+id/choice2"
+                    style="@style/QuizRadioButton" />
+
+                <!-- Choice C -->
+                <RadioButton
+                    android:id="@+id/choice3"
+                    style="@style/QuizRadioButton" />
+
+                <!-- Choice D -->
+                <RadioButton
+                    android:id="@+id/choice4"
+                    style="@style/QuizRadioButton" />
+            </RadioGroup>
+
+            <!-- Navigation Buttons: Previous, Next, Submit -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="32dp">
+
+                <!-- Previous Button -->
+                <Button
+                    android:id="@+id/previousButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#D32F2F"
+                    android:text="Previous"
+                    android:textColor="#FFFFFF" />
+
+                <!-- Next Button -->
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:backgroundTint="#D32F2F"
+                    android:text="NEXT"
+                    android:textColor="#FFFFFF" />
+
+                <!-- Submit Button (Hidden until last question) -->
+                <Button
+                    android:id="@+id/submitButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:backgroundTint="#D32F2F"
+                    android:textColor="#FFFFFF"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

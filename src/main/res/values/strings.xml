@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+    <string name="button_quiz_1">Quiz 1</string>
+    <string name="button_quiz_2">Quiz 2</string>
+    <string name="button_quiz_3">Quiz 3</string>
+    <string name="button_quiz_4">Quiz 4</string>
+    <string name="button_quiz_5">Quiz 5</string>
+    <string name="question_text">Question</string>
+    <string name="option_1">Option 1</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_3">Option 3</string>
+    <string name="option_4">Option 4</string>
+    <string name="next_button">Next</string>
+    <string name="exit_button">Exit</string>
+    <string name="score_text">Your Score: %1$d/%2$d</string>
+</resources>
